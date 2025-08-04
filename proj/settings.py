@@ -27,15 +27,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 DEBUG = os.getenv("DJANGO_DEBUG") == "True"
-#ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "13.53.101.9,localhost,127.0.0.1").split(",")
 
 
 #SECRET_KEY = 'django-insecure-&35aucvc#z^sr*%g!4ckl-$b=@3tqvo0*-1j(0^*cwy$g$f^7h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
+#ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
 
 
 # Application definition
